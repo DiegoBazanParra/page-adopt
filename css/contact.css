@@ -1,0 +1,154 @@
+.form {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+.form .title {
+    text-align: center;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--background-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contact {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.contact-image {
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+}
+
+.contact-image::before {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, transparent, #ffffff45);
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-inline-size: 750px;
+    margin: auto;
+}
+
+@media (min-width:300px){
+    .form .title {
+        margin: 0;
+    }
+}
+@media (min-width:768px){
+    .form .title {
+        margin: auto;
+    }
+}
+.form p {
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form .label {
+    color: var(--color-primary);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.form input, .form textarea {
+    font-family: "Poppins";
+    outline: none;
+    resize: none;
+    border: 2px solid var(--color-primary);
+    font-size: 15px;
+    border-radius: 8px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    margin-block-start: 8px;
+    background: #444cf717;
+}
+
+.form select {
+    outline: none;
+    font-family: "Poppins";
+    background: #444cf717;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    margin-block-start: 8px;
+}
+
+.form .button {
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0.875rem 2.1875rem;
+    background: var(--btn-primary);
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+}
+
+.form .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+.form .button:hover::before {
+    opacity: 1;
+}
+.list-mascot select{
+    display: block;
+    width: 100%;
+}
+.list-mascot {
+    display: flex;
+    gap: 10px;
+}
+@media (min-width:300px){
+    .list-mascot {
+        flex-flow: column;
+    }
+}
+@media (min-width:768px){
+    .list-mascot {
+        flex-flow: initial;
+    }
+}

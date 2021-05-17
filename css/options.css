@@ -1,0 +1,32 @@
+/* Section Options */
+.options {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+}
+.list-icons {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+}
+.list-item {
+  text-align: center;
+}
+.list-icons svg {
+  width: 22px;
+}
+.list-icons svg path {
+  fill: var(--color-primary);
+}
+.list-icons svg path:hover {
+  fill: rgb(255, 255, 255);
+}
+.list-text {
+  display: none;
+}
